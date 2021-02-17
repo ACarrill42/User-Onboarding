@@ -1,12 +1,37 @@
 import React from 'react';
-import Axios from 'axios';
-import * as Yup from 'yup';
 
 function Form() {
     return(
-        <div>
-            Hello World
-        </div>
+        <form>
+            <div className = 'container'>
+                <label> Name:
+                    <input 
+                        name = 'name'
+                        type = ''
+                    />
+                </label>
+                <label> Email:
+                    <input 
+                        name = 'email'
+                        type = ''
+                    />
+                </label>
+                <label>Password:
+                    <input 
+                        name = 'password'
+                        type = ''
+                    />
+                </label>
+                <label>Terms of Service
+                    <input 
+                        name = 'service'
+                        type = 'checkbox'
+                    />
+                </label>
+                <button>Submit</button>
+            </div>   
+        </form>
+
     )
 }
 
