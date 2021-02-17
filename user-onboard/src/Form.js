@@ -1,25 +1,26 @@
 import React from 'react';
 
-function Form() {
+function Form(props) {
+    const {users} = props;
     return(
         <form>
             <div className = 'container'>
                 <label> Name:
                     <input 
                         name = 'name'
-                        type = ''
+                        type = 'text'
                     />
                 </label>
                 <label> Email:
                     <input 
                         name = 'email'
-                        type = ''
+                        type = 'text'
                     />
                 </label>
                 <label>Password:
                     <input 
                         name = 'password'
-                        type = ''
+                        type = 'text'
                     />
                 </label>
                 <label>Terms of Service
