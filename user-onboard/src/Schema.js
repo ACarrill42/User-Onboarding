@@ -3,16 +3,15 @@ import * as Yup from 'yup';
 const Schema = Yup.object().shape({
   name: Yup
   .string()
-  .required(),
+  .required('Name is required'),
 
   email: Yup
   .string()
-  .required()
-  .min(5, 'must be a minimum of 5 characters'),
+  .required('Email is required'),
 
   password: Yup 
   .string()
-  .required()
+  .required('Password is required')
   .min(6, 'must be a minimum of 6 characters'),
 
   service: Yup.boolean() 
