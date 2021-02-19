@@ -54,7 +54,7 @@ function Form(props) {
                     <div>{errors.email}</div>
                     <div>{errors.password}</div>
                 </div>
-                <button disbled = {disabler}>Submit</button>
+                <button className = 'submitBtn' disbled = {disabler}>Submit</button>
             </div>   
         </form>
 
